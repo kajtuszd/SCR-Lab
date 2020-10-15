@@ -23,9 +23,9 @@ while getopts ":m:n:a:" opt; do
 			;;
 	esac
 done
-if [[ ""=$mask ]]; then echo "Podaj maske pliku: "; read mask; fi
-if [[ ""=$time ]]; then echo "Podaj czas istnienia pliku: "; read time; fi
-if [[ ""=$file ]]; then echo "Podaj nazwe archiwum: "; read file; fi			
+if [[ "" = $mask ]]; then echo "Podaj maske pliku: "; read mask; fi
+if [[ "" = $time ]]; then echo "Podaj czas istnienia pliku: "; read time; fi
+if [[ "" = $file ]]; then echo "Podaj nazwe archiwum: "; read file; fi			
 		
 find . -type f -mtime -$time -name "$mask" | xargs tar  -czf $file.tar.gz 
 

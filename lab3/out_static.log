@@ -1,0 +1,13 @@
+execve("./a.out", ["./a.out"], 0x7ffd766c11d0 /* 49 vars */) = 0
+brk(NULL)                               = 0x228b000
+brk(0x228c200)                          = 0x228c200
+arch_prctl(ARCH_SET_FS, 0x228b8c0)      = 0
+uname({sysname="Linux", nodename="kajetan-ThinkPad-T460", ...}) = 0
+readlink("/proc/self/exe", "/home/kajetan/Pulpit/scr/lab3/a."..., 4096) = 35
+brk(0x22ad200)                          = 0x22ad200
+brk(0x22ae000)                          = 0x22ae000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 1), ...}) = 0
+write(1, "Hello world\n", 12)           = 12
+exit_group(0)                           = ?
++++ exited with 0 +++

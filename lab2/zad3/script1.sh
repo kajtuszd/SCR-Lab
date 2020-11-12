@@ -1,8 +1,0 @@
-#!/bin/bash
-x=1;
-while [ $x -le 5 ] ; do
-	x=$[x + 1]
-	sleep 1s
-done
-
-echo "hello"
